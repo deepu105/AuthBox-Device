@@ -1,0 +1,22 @@
+{
+  "name": "authbox-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "sudo node server.mjs"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jose": "^4.14.4",
+    "qrcode": "^1.5.3",
+    "johnny-five": "^2.1.0",
+    "raspi-io": "^11.0.0"
+  }
+}

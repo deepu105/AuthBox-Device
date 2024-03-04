@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuthBox</title>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="box">
+        <img src="/logo.svg" class="logo"/>
+        <div id="start" class="flex">
+          <h1>Welcome to the <span class="gradient-auth">AuthBox</span><h1>
+	  <h1>Login to get started.</h1>
+          <button id="login" class="button">Login</button>
+        </div>
+        <div id="codes" class="flex hidden">
+          <span id="qr" class="qr">
+            <canvas id="qr-canvas"></canvas>
+          </span>
+          <div id="user-code" class="user-code"></div>
+        </div>
+        <div id="user" class="flex flex-row hidden">
+          <img 
+            src="" 
+            alt="The users avatar" 
+            id= "user-avatar" 
+            class="user-avatar"
+          />
+          <div class="user-details">
+            <h2 id="user-name"></h2>
+            <p id="user-email"></p>
+          </div>
+        </div>
+	<div id="reload" class="flex hidden">
+	  <button onClick="window.location.reload();" id="reload-button" class="button">Reload</button>
+	</div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
